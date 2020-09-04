@@ -14,14 +14,58 @@
     height: 100vh;
     min-height: 600px;
     max-height: 756px;
-    background-color: yellow;
     position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+.header__title {
+  margin-left: 64px;
+  width: 730px;
+  font-size: 102px;
+  font-weight: bold;
+  line-height: 96px;
+  z-index: 60;
+}
+
+.header__subtitle {
+  position: absolute;
+  bottom: 30px;
+  left: 64px;
+  z-index: 80;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 25px;
+  width: 388px;
+}
+
+.header__link {
+  color: #2f80ed;
+}
+
+.header__main-illustration {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 765px;
+  height: 608px;
+  z-index: 20;
+}
+
+.header__square-pic {
+  width: 568px;
+  height: 568px;
+  z-index: 0;
+  position: absolute;
+  right: 0;
+  top: 64px;
+  background-color: #2f80ed;
 }
 
 .logo {
     margin: 0;
-    height: 40px;
-    width: 190px;
     z-index: 100;
 }
 
@@ -29,35 +73,58 @@
     position: absolute;
     top: 30px;
     left: 64px;
-    background-repeat: no-repeat;
-    background-image: url(../images/logo_place_header.svg);
 }
 
 .logo_place_footer {
     align-self: flex-start;
-    background-repeat: no-repeat;
-    background-image: url(../images/logo_place_footer.svg);
 }
-
-.logo_place_footer {}
 
 .description {
     width: 100%;
     margin: 0;
     padding: 100px 0;
-    background-color: pink;
-    /* ВРЕМЕННО */
     display: flex;
     justify-content: center;
 }
 
 .two-columns {
-    background-color: lightblue;
-    /* ВРЕМЕННО */
     width: 80%;
-    height: 200px;
-    /* ВРЕМЕННО */
     margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.two-columns__brief {
+  width: 175px;
+  color: #2f80ed;
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: normal;
+  margin: 0;
+}
+
+.two-columns__main-text {
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 34px;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  min-width: 784px;
+  margin: 0;
+  padding: 0;
+}
+
+.two-columns__paragraph {
+  margin-bottom: 30px;
+}
+
+.two-columns__paragraph:last-of-type {
+  margin-bottom: 0px;
+}
+
+.two-columns__span-accent {
+  font-weight: bold;
 }
 
 .digits {
