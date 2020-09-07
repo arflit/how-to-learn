@@ -314,6 +314,7 @@
 .footer__column {
     display: flex;
     flex-direction: column;
+
 }
 
 .footer__column_content_copyright {
@@ -338,10 +339,12 @@
 .footer__column-links {
     margin: 0 0 16px 0;
     padding: 0;
+
 }
 
-.footer__li {
+.footer__list-element {
     list-style: none;
+
 }
 
 .footer__link {
@@ -350,10 +353,13 @@
     font-size: 18px;
     font-weight: normal;
     line-height: 30px;
+
 }
 
 .footer__social-icon {
     width: 16px;
     height: 16px;
     margin: 0 10px 0 0;
+    position: relative;
+    top: 2px;
 }
