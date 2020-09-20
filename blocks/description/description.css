@@ -1,0 +1,8 @@
+.description {
+  width: 100%;
+  margin: 0;
+  padding: 100px 0;
+  display: flex;
+  justify-content: center;
+  background-color: #ffffff;
+}
